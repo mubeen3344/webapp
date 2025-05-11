@@ -188,6 +188,5 @@ def rate(media_id):
     return redirect(url_for('home'))
 
 if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
+    # db.create_all()  # <-- comment this out or remove it
     app.run(debug=True) 
