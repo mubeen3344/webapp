@@ -4,3 +4,4 @@ uploads/
 __pycache__/
 *.pyc
 site.db
+.DS_Store
