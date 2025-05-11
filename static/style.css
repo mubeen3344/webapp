@@ -1,0 +1,115 @@
+body {
+    background: linear-gradient(135deg, #e0f7fa 0%, #f8fafc 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.media-item {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    border-radius: 24px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+}
+
+.media-item:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.16);
+}
+
+.media-item img, .media-item video {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 24px 24px 0 0;
+}
+
+.media-info {
+    padding: 20px;
+    background: linear-gradient(90deg, #f8fafc 60%, #e3f2fd 100%);
+    border-radius: 0 0 24px 24px;
+}
+
+.card-title {
+    color: #1976d2;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.card-text {
+    color: #333;
+    font-size: 1.05rem;
+}
+
+.btn-primary, .btn-success, .btn-warning, .btn-danger {
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #1976d2 60%, #00bcd4 100%);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #00bcd4 0%, #1976d2 100%);
+}
+
+.btn-success {
+    background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+    border: none;
+}
+
+.btn-success:hover {
+    background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
+}
+
+.btn-warning {
+    background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
+    border: none;
+    color: #333;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(90deg, #ffd200 0%, #f7971e 100%);
+    color: #222;
+}
+
+.btn-danger {
+    background: linear-gradient(90deg, #ff5858 0%, #f09819 100%);
+    border: none;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(90deg, #f09819 0%, #ff5858 100%);
+}
+
+.upload-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+input[type="text"], .form-control, .form-select {
+    border-radius: 12px;
+    border: 1px solid #bdbdbd;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus, .form-control:focus, .form-select:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 0 2px #b3e5fc;
+} 
